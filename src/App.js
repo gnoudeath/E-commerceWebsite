@@ -1,9 +1,19 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Router, Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout";
 
 function App() {
   return (
-    <h1>Hello fro app</h1>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
