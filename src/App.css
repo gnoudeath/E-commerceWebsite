@@ -37,7 +37,7 @@ a {
   border-color: inherit;
 }
 
-.gap-5{
+.gap-5 {
   gap: 5px;
 }
 .gap-10 {
@@ -259,7 +259,6 @@ footer .input-group-text {
 }
 /* Blog Pard end here */
 
-
 /* Product Card */
 .product-card {
   padding: 15px;
@@ -267,38 +266,37 @@ footer .input-group-text {
   border-radius: 10px;
   overflow: hidden;
 }
-.product-card .product-image{
+.product-card .product-image {
   height: 270px;
 }
-.product-card .product-image img{
+.product-card .product-image img {
   object-fit: contain;
 }
-.product-card .product-image>img:last-child{
+.product-card .product-image > img:last-child {
   display: none;
 }
-.product-card:hover .product-image>img:nth-child(1){
+.product-card:hover .product-image > img:nth-child(1) {
   display: none;
 }
-.product-card:hover .product-image>img:last-child{
+.product-card:hover .product-image > img:last-child {
   display: block;
 }
-.product-card:hover .action-bar{
+.product-card:hover .action-bar {
   right: 15px;
-
 }
-.product-card .product-details h6{
+.product-card .product-details h6 {
   color: var(--color-bf4800);
   font-size: 13px;
 }
-.product-card .product-details h5{
+.product-card .product-details h5 {
   font-size: 15px;
   color: var(--color-1c1c1b);
 }
-.product-card .product-details p.price{
+.product-card .product-details p.price {
   font-size: 16px;
   color: var(--color-1c1c1b);
 }
-.action-bar{
+.action-bar {
   top: 10%;
   right: -23px;
   transition: 0.3s;
@@ -319,30 +317,80 @@ footer .input-group-text {
 /* Special product end here */
 
 /* Famous card */
-.famous-card .famous-content{
-  top:10%;
+.famous-card .famous-content {
+  top: 10%;
   left: 5%;
 }
-.famous-card img{
+.famous-card img {
   border-radius: 10px;
 }
-.famous-content h5{
+.famous-content h5 {
   font-size: 13px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 7px;
 }
-.famous-content h6{
+.famous-content h6 {
   font-size: 24px;
   line-height: 38px;
   font-weight: 500;
-  
 }
-.famous-content p{
+.famous-content p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 100;
-  
 }
 /* Famous card end */
+
+/* Our Stone */
+.filter-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 15px 25px;
+}
+
+.filter-title{
+  font-size: 16;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+  margin-bottom: 20px;
+}
+.filter-card ul,
+.filter-card .form-check-lable {
+  list-style: none;
+  font-size: 13px;
+  line-height: 30px;
+  color: var(--color-777777);
+  cursor: pointer;
+}
+.filter-card .form-check-input:focus{
+  box-shadow: none;
+  border-color: rgba(0,0,0,0.25);
+}
+.filter-card .form-check-input :checked {
+  background-color: var(--color-febd69);
+  border-color: var(--color-febd69);
+
+}
+.sub-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.colors {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.colors li{
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+/* Our Stone End Here */
