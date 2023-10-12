@@ -321,7 +321,7 @@ footer .input-group-text {
 /* Famous card */
 .famous-card .famous-content{
   top:10%;
-  left: 10%;
+  left: 5%;
 }
 .famous-card img{
   border-radius: 10px;
@@ -330,7 +330,7 @@ footer .input-group-text {
   font-size: 13px;
   line-height: 20px;
   font-weight: 400;
-
+  text-transform: uppercase;
   margin-bottom: 7px;
 }
 .famous-content h6{
