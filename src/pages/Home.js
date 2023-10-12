@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import BlogCard from "../components/BlogCard";
 import ProductCard from "../components/ProductCard";
-
+import SpecialProduct from "../components/SpecialProduct";
 
 const Home = () => {
   return (
@@ -37,7 +37,9 @@ const Home = () => {
                   <div className="small-banner-content position-absolute">
                     <h4>BEST SALE</h4>
                     <h5>iPad S13+ Pro.</h5>
-                    <p>From $999.00 <br/> or $41.62/mo.</p>
+                    <p>
+                      From $999.00 <br /> or $41.62/mo.
+                    </p>
                   </div>
                 </div>
                 <div className="small-banner position-relative">
@@ -49,7 +51,9 @@ const Home = () => {
                   <div className="small-banner-content position-absolute">
                     <h4>NEW ARRIVAL</h4>
                     <h5>But Ipad Air</h5>
-                    <p>From $999.00 <br/> or $41.62/mo.</p>
+                    <p>
+                      From $999.00 <br /> or $41.62/mo.
+                    </p>
                   </div>
                 </div>
                 <div className="small-banner position-relative">
@@ -61,7 +65,9 @@ const Home = () => {
                   <div className="small-banner-content position-absolute">
                     <h4>NEW ARRIVAL</h4>
                     <h5>But Ipad Air</h5>
-                    <p>From $999.00 <br/> or $41.62/mo.</p>
+                    <p>
+                      From $999.00 <br /> or $41.62/mo.
+                    </p>
                   </div>
                 </div>
                 <div className="small-banner position-relative">
@@ -73,7 +79,9 @@ const Home = () => {
                   <div className="small-banner-content position-absolute">
                     <h4>NEW ARRIVAL</h4>
                     <h5>But Ipad Air</h5>
-                    <p>From $999.00 <br/> or $41.62/mo.</p>
+                    <p>
+                      From $999.00 <br /> or $41.62/mo.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -205,12 +213,55 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className="famous-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="images/test.webp" alt="famous"></img>
+                <div className="famous-content position-absolute">
+                <h5>Big Screen</h5>
+                <h6>Smart Watch Series 9</h6>
+                <p>From $399or $16.62/mo. for 24 mo.*</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="special-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
               <h3 className="section-heading">Special Products</h3>
             </div>
+          </div>
+          <div className="row">
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+          </div>
+        </div>
+      </section>
+      <section className="popular-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Our Popular Products</h3>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-2">
+              <div className="card"></div>
+            </div>
+            <div className="col-2">
+              <div className="card"></div>
+            </div>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
           </div>
         </div>
       </section>
@@ -220,14 +271,30 @@ const Home = () => {
             <div className="col-12">
               <div className="marquee-inner-wrapper card-wrapper">
                 <Marquee className="d-flex">
-                  <div className="mx-4 w-25"><img src="images/brand-01.png" alt="brand"></img></div>
-                  <div className="mx-4 w-25"><img src="images/brand-02.png" alt="brand"></img></div>
-                  <div className="mx-4 w-25"><img src="images/brand-03.png" alt="brand"></img></div>
-                  <div className="mx-4 w-25"><img src="images/brand-04.png" alt="brand"></img></div>
-                  <div className="mx-4 w-25"><img src="images/brand-05.png" alt="brand"></img></div>
-                  <div className="mx-4 w-25"><img src="images/brand-06.png" alt="brand"></img></div>
-                  <div className="mx-4 w-25"><img src="images/brand-07.png" alt="brand"></img></div>
-                  <div className="mx-4 w-25"><img src="images/brand-08.png" alt="brand"></img></div>   
+                  <div className="mx-4 w-25">
+                    <img src="images/brand-01.png" alt="brand"></img>
+                  </div>
+                  <div className="mx-4 w-25">
+                    <img src="images/brand-02.png" alt="brand"></img>
+                  </div>
+                  <div className="mx-4 w-25">
+                    <img src="images/brand-03.png" alt="brand"></img>
+                  </div>
+                  <div className="mx-4 w-25">
+                    <img src="images/brand-04.png" alt="brand"></img>
+                  </div>
+                  <div className="mx-4 w-25">
+                    <img src="images/brand-05.png" alt="brand"></img>
+                  </div>
+                  <div className="mx-4 w-25">
+                    <img src="images/brand-06.png" alt="brand"></img>
+                  </div>
+                  <div className="mx-4 w-25">
+                    <img src="images/brand-07.png" alt="brand"></img>
+                  </div>
+                  <div className="mx-4 w-25">
+                    <img src="images/brand-08.png" alt="brand"></img>
+                  </div>
                 </Marquee>
               </div>
             </div>
