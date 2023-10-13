@@ -265,6 +265,11 @@ footer .input-group-text {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
+}
+.product-image {
+  max-width: 269px;
+  max-height: 269px;
 }
 .product-card .product-image {
   height: 270px;
@@ -404,5 +409,28 @@ footer .input-group-text {
   padding: 10px;
   background-color: white;
   border-radius: 10px;
+}
+.grid img{
+  width: 35px;
+  height: 35px;
+  background-color: var(--color-f2f2f2);
+  padding: 8px;
+  border-radius: 3px;
+}
+.gr-12{
+  width: 100%;
+}
+.gr-6{
+  width: 49%;
+}
+.gr-4{
+  width: 32%;
+}
+.gr-3{
+  width: 24%;
+}
+.gr-12 .product-card{
+  display: flex;
+  gap:20px;
 }
 /* Our Stone End Here */
