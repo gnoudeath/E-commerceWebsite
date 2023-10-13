@@ -301,6 +301,10 @@ footer .input-group-text {
   font-size: 16px;
   color: var(--color-1c1c1b);
 }
+.product-card p.description{
+  font-size: 13px;
+  color: var(--color-777777);
+}
 .action-bar {
   top: 10%;
   right: -23px;
@@ -416,6 +420,7 @@ footer .input-group-text {
   background-color: var(--color-f2f2f2);
   padding: 8px;
   border-radius: 3px;
+  cursor: pointer;
 }
 .gr-12{
   width: 100%;
@@ -432,5 +437,18 @@ footer .input-group-text {
 .gr-12 .product-card{
   display: flex;
   gap:20px;
+}
+.gr-6 .product-image{
+  width: 100%;
+}
+.gr-6 .product-image img{
+  margin: auto;
+  display: block;
+}
+.gr-12 .product-card .product-image{
+  width: 270px;
+}
+.gr-12 .action-bar{
+  top: 13%;
 }
 /* Our Stone End Here */
