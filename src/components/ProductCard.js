@@ -9,10 +9,10 @@ const ProductCard = (props) => {
     <>
       <div
         className={` ${
-          location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
+          location.pathname === "/ourStone" ? `gr-${grid}` : "col-3"
         } `}
       >
-        <Link className="product-card position-relative">
+        <Link to=':id' className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
               <img src="images/wish.svg" alt="wishlist"></img>
@@ -69,7 +69,7 @@ const ProductCard = (props) => {
           location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
         } `}
       >
-        <Link className="product-card position-relative">
+        <Link to='product/:id' className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
               <img src="images/wish.svg" alt="wishlist"></img>
@@ -126,7 +126,7 @@ const ProductCard = (props) => {
           location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
         } `}
       >
-        <Link className="product-card position-relative">
+        <Link to='product/:id' className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
               <img src="images/wish.svg" alt="wishlist"></img>
@@ -185,7 +185,7 @@ const ProductCard = (props) => {
           location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
         } `}
       >
-        <Link className="product-card position-relative">
+        <Link to='product/:id' className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
               <img src="images/wish.svg" alt="wishlist"></img>
@@ -244,7 +244,7 @@ const ProductCard = (props) => {
           location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
         } `}
       >
-        <Link className="product-card position-relative">
+        <Link to='product/:id' className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
               <img src="images/wish.svg" alt="wishlist"></img>
@@ -302,7 +302,7 @@ const ProductCard = (props) => {
           location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
         } `}
       >
-        <Link className="product-card position-relative">
+        <Link to='product/:id' className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
               <img src="images/wish.svg" alt="wishlist"></img>
@@ -361,65 +361,7 @@ const ProductCard = (props) => {
           location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
         } `}
       >
-        <Link className="product-card position-relative">
-          <div className="wishlist-icon position-absolute">
-            <Link>
-              <img src="images/wish.svg" alt="wishlist"></img>
-            </Link>
-          </div>
-          <div className="product-image">
-            <img
-              src="images/nokia.webp"
-              className="img-fluid"
-              alt="productImage"
-            />
-            <img
-              src="images/nokia-f.webp"
-              className="img-fluid"
-              alt="productImage"
-            />
-          </div>
-          <div className="product-details">
-            <h6 className="brand">Nokia</h6>
-            <h5 className="product-title">Nokia C32 4GB 128GB</h5>
-            <ReactStars
-              count={5}
-              size={24}
-              value={4}
-              edit={false}
-              activeColor="#ffd700"
-            />
-            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
-              Nokia C21 Plus has a pair of 13MP + 2MP rear cameras. In
-              particular, the main camera of the Nokia C21 Plus phone also
-              supports wide-angle shooting with autofocus to help you unleash
-              your creativity to create photos that capture many memorable
-              moments. In addition, the 2,P secondary camera supports portrait
-              mode to create top-notch artistic photos.
-            </p>
-            <p className="price">$499.00</p>
-          </div>
-          <div className="action-bar position-absolute">
-            <div className="d-flex flex-column gap-15">
-              <Link>
-                <img src="images/prodcompare.svg" alt="conpare" />
-              </Link>
-              <Link>
-                <img src="images/view.svg" alt="view" />
-              </Link>
-              <Link>
-                <img src="images/add-cart.svg" alt="addcart" />
-              </Link>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div
-        className={` ${
-          location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
-        } `}
-      >
-        <Link className="product-card position-relative">
+        <Link to='product/:id' className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
               <img src="images/wish.svg" alt="wishlist"></img>
@@ -479,7 +421,7 @@ const ProductCard = (props) => {
           location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
         } `}
       >
-        <Link className="product-card position-relative">
+        <Link to='product/:id' className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
               <img src="images/wish.svg" alt="wishlist"></img>
@@ -531,319 +473,7 @@ const ProductCard = (props) => {
           location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
         } `}
       >
-        <Link className="product-card position-relative">
-          <div className="wishlist-icon position-absolute">
-            <Link>
-              <img src="images/wish.svg" alt="wishlist"></img>
-            </Link>
-          </div>
-          <div className="product-image">
-            <img
-              src="images/ip15-black.jpg"
-              className="img-fluid"
-              alt="productImage"
-            />
-            <img
-              src="images/ip15-pink.jpg"
-              className="img-fluid"
-              alt="productImage"
-            />
-          </div>
-          <div className="product-details">
-            <h6 className="brand">Havels</h6>
-            <h5 className="product-title">
-              Kids headphone bulk 10 pack multi colored for students
-            </h5>
-            <ReactStars
-              count={5}
-              size={24}
-              value={4}
-              edit={false}
-              activeColor="#ffd700"
-            />
-            <p className="price">$100.00</p>
-          </div>
-          <div className="action-bar position-absolute">
-            <div className="d-flex flex-column gap-15">
-              <Link>
-                <img src="images/prodcompare.svg" alt="conpare" />
-              </Link>
-              <Link>
-                <img src="images/view.svg" alt="view" />
-              </Link>
-              <Link>
-                <img src="images/add-cart.svg" alt="addcart" />
-              </Link>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div
-        className={` ${
-          location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
-        } `}
-      >
-        <Link className="product-card position-relative">
-          <div className="wishlist-icon position-absolute">
-            <Link>
-              <img src="images/wish.svg" alt="wishlist"></img>
-            </Link>
-          </div>
-          <div className="product-image">
-            <img
-              src="images/ip15-black.jpg"
-              className="img-fluid"
-              alt="productImage"
-            />
-            <img
-              src="images/ip15-pink.jpg"
-              className="img-fluid"
-              alt="productImage"
-            />
-          </div>
-          <div className="product-details">
-            <h6 className="brand">Havels</h6>
-            <h5 className="product-title">
-              Kids headphone bulk 10 pack multi colored for students
-            </h5>
-            <ReactStars
-              count={5}
-              size={24}
-              value={4}
-              edit={false}
-              activeColor="#ffd700"
-            />
-            <p className="price">$100.00</p>
-          </div>
-          <div className="action-bar position-absolute">
-            <div className="d-flex flex-column gap-15">
-              <Link>
-                <img src="images/prodcompare.svg" alt="conpare" />
-              </Link>
-              <Link>
-                <img src="images/view.svg" alt="view" />
-              </Link>
-              <Link>
-                <img src="images/add-cart.svg" alt="addcart" />
-              </Link>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div
-        className={` ${
-          location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
-        } `}
-      >
-        <Link className="product-card position-relative">
-          <div className="wishlist-icon position-absolute">
-            <Link>
-              <img src="images/wish.svg" alt="wishlist"></img>
-            </Link>
-          </div>
-          <div className="product-image">
-            <img
-              src="images/ip15-black.jpg"
-              className="img-fluid"
-              alt="productImage"
-            />
-            <img
-              src="images/ip15-pink.jpg"
-              className="img-fluid"
-              alt="productImage"
-            />
-          </div>
-          <div className="product-details">
-            <h6 className="brand">Havels</h6>
-            <h5 className="product-title">
-              Kids headphone bulk 10 pack multi colored for students
-            </h5>
-            <ReactStars
-              count={5}
-              size={24}
-              value={4}
-              edit={false}
-              activeColor="#ffd700"
-            />
-            <p className="price">$100.00</p>
-          </div>
-          <div className="action-bar position-absolute">
-            <div className="d-flex flex-column gap-15">
-              <Link>
-                <img src="images/prodcompare.svg" alt="conpare" />
-              </Link>
-              <Link>
-                <img src="images/view.svg" alt="view" />
-              </Link>
-              <Link>
-                <img src="images/add-cart.svg" alt="addcart" />
-              </Link>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div
-        className={` ${
-          location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
-        } `}
-      >
-        <Link className="product-card position-relative">
-          <div className="wishlist-icon position-absolute">
-            <Link>
-              <img src="images/wish.svg" alt="wishlist"></img>
-            </Link>
-          </div>
-          <div className="product-image">
-            <img
-              src="images/ip15-black.jpg"
-              className="img-fluid"
-              alt="productImage"
-            />
-            <img
-              src="images/ip15-pink.jpg"
-              className="img-fluid"
-              alt="productImage"
-            />
-          </div>
-          <div className="product-details">
-            <h6 className="brand">Havels</h6>
-            <h5 className="product-title">
-              Kids headphone bulk 10 pack multi colored for students
-            </h5>
-            <ReactStars
-              count={5}
-              size={24}
-              value={4}
-              edit={false}
-              activeColor="#ffd700"
-            />
-            <p className="price">$100.00</p>
-          </div>
-          <div className="action-bar position-absolute">
-            <div className="d-flex flex-column gap-15">
-              <Link>
-                <img src="images/prodcompare.svg" alt="conpare" />
-              </Link>
-              <Link>
-                <img src="images/view.svg" alt="view" />
-              </Link>
-              <Link>
-                <img src="images/add-cart.svg" alt="addcart" />
-              </Link>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div
-        className={` ${
-          location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
-        } `}
-      >
-        <Link className="product-card position-relative">
-          <div className="wishlist-icon position-absolute">
-            <Link>
-              <img src="images/wish.svg" alt="wishlist"></img>
-            </Link>
-          </div>
-          <div className="product-image">
-            <img
-              src="images/ip15-black.jpg"
-              className="img-fluid"
-              alt="productImage"
-            />
-            <img
-              src="images/ip15-pink.jpg"
-              className="img-fluid"
-              alt="productImage"
-            />
-          </div>
-          <div className="product-details">
-            <h6 className="brand">Havels</h6>
-            <h5 className="product-title">
-              Kids headphone bulk 10 pack multi colored for students
-            </h5>
-            <ReactStars
-              count={5}
-              size={24}
-              value={4}
-              edit={false}
-              activeColor="#ffd700"
-            />
-            <p className="price">$100.00</p>
-          </div>
-          <div className="action-bar position-absolute">
-            <div className="d-flex flex-column gap-15">
-              <Link>
-                <img src="images/prodcompare.svg" alt="conpare" />
-              </Link>
-              <Link>
-                <img src="images/view.svg" alt="view" />
-              </Link>
-              <Link>
-                <img src="images/add-cart.svg" alt="addcart" />
-              </Link>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div
-        className={` ${
-          location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
-        } `}
-      >
-        <Link className="product-card position-relative">
-          <div className="wishlist-icon position-absolute">
-            <Link>
-              <img src="images/wish.svg" alt="wishlist"></img>
-            </Link>
-          </div>
-          <div className="product-image">
-            <img
-              src="images/ip15-black.jpg"
-              className="img-fluid"
-              alt="productImage"
-            />
-            <img
-              src="images/ip15-pink.jpg"
-              className="img-fluid"
-              alt="productImage"
-            />
-          </div>
-          <div className="product-details">
-            <h6 className="brand">Havels</h6>
-            <h5 className="product-title">
-              Kids headphone bulk 10 pack multi colored for students
-            </h5>
-            <ReactStars
-              count={5}
-              size={24}
-              value={4}
-              edit={false}
-              activeColor="#ffd700"
-            />
-            <p className="price">$100.00</p>
-          </div>
-          <div className="action-bar position-absolute">
-            <div className="d-flex flex-column gap-15">
-              <Link>
-                <img src="images/prodcompare.svg" alt="conpare" />
-              </Link>
-              <Link>
-                <img src="images/view.svg" alt="view" />
-              </Link>
-              <Link>
-                <img src="images/add-cart.svg" alt="addcart" />
-              </Link>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div
-        className={` ${
-          location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
-        } `}
-      >
-        <Link className="product-card position-relative">
+        <Link to='product/:id' className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
               <img src="images/wish.svg" alt="wishlist"></img>

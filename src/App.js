@@ -14,6 +14,11 @@ import Forgotpassword from "./pages/Forgotpassword";
 import Signup from "./pages/Signup";
 import ResetPassword from "./pages/ResetPassword";
 import SignleBlog from "./pages/SignleBlog";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import RefundPolicy from "./pages/RefundPolicy";
+import ShippingPolicy from "./pages/ShippingPolicy";
+import TermAndConditions from "./pages/TermAndConditions";
+import SignleProduct from "./pages/SignleProduct";
 
 function App() {
   return (
@@ -24,7 +29,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="ourStone" element={<OurStone />} />
+            <Route path="product" element={<OurStone />} />
+            <Route path="product/:id" element={<SignleProduct />} />
             <Route path="blogs" element={<Blog />} />
             <Route path="blogs/:id" element={<SignleBlog />} />
             <Route path="compare-product" element={<CompareProduct />} />
@@ -33,6 +39,10 @@ function App() {
             <Route path="forgot-password" element={<Forgotpassword />} />
             <Route path="signup" element={<Signup />} />
             <Route path="reset-password" element={<ResetPassword />} />
+            <Route path="privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="refund-policy" element={<RefundPolicy />} />
+            <Route path="shipping-policy" element={<ShippingPolicy />} />
+            <Route path="term-conditions" element={<TermAndConditions />} />
           </Route>
         </Routes>
       </BrowserRouter>
