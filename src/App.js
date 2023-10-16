@@ -13,6 +13,7 @@ import Login from "./pages/Login";
 import Forgotpassword from "./pages/Forgotpassword";
 import Signup from "./pages/Signup";
 import ResetPassword from "./pages/ResetPassword";
+import SignleBlog from "./pages/SignleBlog";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="ourStone" element={<OurStone />} />
             <Route path="blogs" element={<Blog />} />
+            <Route path="blogs/:id" element={<SignleBlog />} />
             <Route path="compare-product" element={<CompareProduct />} />
             <Route path="wishlist" element={<Wishlist />} />
             <Route path="login" element={<Login />} />
