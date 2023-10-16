@@ -9,7 +9,7 @@ const ProductCard = (props) => {
     <>
       <div
         className={` ${
-          location.pathname === "/ourStone" ? `gr-${grid}` : "col-3"
+          location.pathname === "/product" ? `gr-${grid}` : "col-3"
         } `}
       >
         <Link to=':id' className="product-card position-relative">
@@ -66,7 +66,7 @@ const ProductCard = (props) => {
       </div>
       <div
         className={` ${
-          location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
+          location.pathname == "/product" ? `gr-${grid}` : "col-3"
         } `}
       >
         <Link to='product/:id' className="product-card position-relative">
@@ -123,7 +123,7 @@ const ProductCard = (props) => {
       </div>
       <div
         className={` ${
-          location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
+          location.pathname == "/product" ? `gr-${grid}` : "col-3"
         } `}
       >
         <Link to='product/:id' className="product-card position-relative">
@@ -182,7 +182,7 @@ const ProductCard = (props) => {
       </div>
       <div
         className={` ${
-          location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
+          location.pathname == "/product" ? `gr-${grid}` : "col-3"
         } `}
       >
         <Link to='product/:id' className="product-card position-relative">
@@ -241,7 +241,7 @@ const ProductCard = (props) => {
       </div>
       <div
         className={` ${
-          location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
+          location.pathname == "/product" ? `gr-${grid}` : "col-3"
         } `}
       >
         <Link to='product/:id' className="product-card position-relative">
@@ -299,7 +299,7 @@ const ProductCard = (props) => {
       </div>
       <div
         className={` ${
-          location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
+          location.pathname == "/product" ? `gr-${grid}` : "col-3"
         } `}
       >
         <Link to='product/:id' className="product-card position-relative">
@@ -358,7 +358,7 @@ const ProductCard = (props) => {
       </div>
       <div
         className={` ${
-          location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
+          location.pathname == "/product" ? `gr-${grid}` : "col-3"
         } `}
       >
         <Link to='product/:id' className="product-card position-relative">
@@ -418,7 +418,7 @@ const ProductCard = (props) => {
       </div>
       <div
         className={` ${
-          location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
+          location.pathname == "/product" ? `gr-${grid}` : "col-3"
         } `}
       >
         <Link to='product/:id' className="product-card position-relative">
@@ -470,7 +470,7 @@ const ProductCard = (props) => {
       </div>
       <div
         className={` ${
-          location.pathname == "/ourStone" ? `gr-${grid}` : "col-3"
+          location.pathname == "/product" ? `gr-${grid}` : "col-3"
         } `}
       >
         <Link to='product/:id' className="product-card position-relative">
