@@ -1,7 +1,23 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from "react-router-dom";
-
+import prodcompare from "../images/prodcompare.svg"
+import wish from "../images/wish.svg";
+import addcart from "../images/add-cart.svg";
+import view from "../images/view.svg";
+// import wishlist from "../images/wishlist.svg";
+import ip15pink from "../images/ip15-pink.webp";
+import ip15pinkf from "../images/ip15-pink-f.webp";
+import s23 from "../images/s23-ultra.webp";
+import s23f from "../images/s23-ultra-f.webp";
+import xiaomi from "../images/s23-ultra.webp";
+import xiaomif from "../images/s23-ultra-f.webp";
+import oppo from "../images/oppo.webp";
+import oppof from "../images/oppo-f.webp";
+import vivo from "../images/vivo.webp";
+import vivof from "../images/vivo-f.webp";
+import real from "../images/realme.webp";
+import realf from "../images/realme-f.webp";
 const ProductCard = (props) => {
   const { grid } = props;
   let location = useLocation();
@@ -15,17 +31,17 @@ const ProductCard = (props) => {
         <Link to=':id' className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
-              <img src="images/wish.svg" alt="wishlist"></img>
+              <img src={wish} alt="wishlist"></img>
             </Link>
           </div>
           <div className="product-image">
             <img
-              src="images/ip15-pink.webp"
+              src={ip15pink}
               className="img-fluid"
               alt="productImage"
             />
             <img
-              src="images/ip15-pink-f.webp"
+              src={ip15pinkf}
               className="img-fluid"
               alt="productImage"
             />
@@ -52,13 +68,13 @@ const ProductCard = (props) => {
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
               <Link>
-                <img src="images/prodcompare.svg" alt="conpare" />
+                <img src={prodcompare} alt="conpare" />
               </Link>
               <Link>
-                <img src="images/view.svg" alt="view" />
+                <img src={view} alt="view" />
               </Link>
               <Link>
-                <img src="images/add-cart.svg" alt="addcart" />
+                <img src={addcart} alt="addcart" />
               </Link>
             </div>
           </div>
@@ -72,17 +88,17 @@ const ProductCard = (props) => {
         <Link to='product/:id' className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
-              <img src="images/wish.svg" alt="wishlist"></img>
+              <img src={wish} alt="wishlist"></img>
             </Link>
           </div>
           <div className="product-image">
             <img
-              src="images/s23-ultra.webp"
+              src={s23}
               className="img-fluid"
               alt="productImage"
             />
             <img
-              src="images/s23-ultra-f.webp"
+              src={s23f}
               className="img-fluid"
               alt="productImage"
             />
@@ -109,13 +125,13 @@ const ProductCard = (props) => {
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
               <Link>
-                <img src="images/prodcompare.svg" alt="conpare" />
+                <img src={prodcompare} alt="conpare" />
               </Link>
               <Link>
-                <img src="images/view.svg" alt="view" />
+                <img src={view} alt="view" />
               </Link>
               <Link>
-                <img src="images/add-cart.svg" alt="addcart" />
+                <img src={addcart} alt="addcart" />
               </Link>
             </div>
           </div>
@@ -129,17 +145,17 @@ const ProductCard = (props) => {
         <Link to='product/:id' className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
-              <img src="images/wish.svg" alt="wishlist"></img>
+              <img src={wish} alt="wishlist"></img>
             </Link>
           </div>
           <div className="product-image">
             <img
-              src="images/xiaomi-phone.webp"
+              src={xiaomi}
               className="img-fluid"
               alt="productImage"
             />
             <img
-              src="images/xiaomi-phone-f.webp"
+              src={xiaomif}
               className="img-fluid"
               alt="productImage"
             />
@@ -168,13 +184,13 @@ const ProductCard = (props) => {
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
               <Link>
-                <img src="images/prodcompare.svg" alt="conpare" />
+                <img src={prodcompare} alt="conpare" />
               </Link>
               <Link>
-                <img src="images/view.svg" alt="view" />
+                <img src={view} alt="view" />
               </Link>
               <Link>
-                <img src="images/add-cart.svg" alt="addcart" />
+                <img src={addcart} alt="addcart" />
               </Link>
             </div>
           </div>
@@ -188,17 +204,17 @@ const ProductCard = (props) => {
         <Link to='product/:id' className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
-              <img src="images/wish.svg" alt="wishlist"></img>
+              <img src={wish} alt="wishlist"></img>
             </Link>
           </div>
           <div className="product-image">
             <img
-              src="images/oppo.webp"
+              src={oppo}
               className="img-fluid"
               alt="productImage"
             />
             <img
-              src="images/oppo-f.webp"
+              src={oppof}
               className="img-fluid"
               alt="productImage"
             />
@@ -227,13 +243,13 @@ const ProductCard = (props) => {
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
               <Link>
-                <img src="images/prodcompare.svg" alt="conpare" />
+                <img src={prodcompare} alt="conpare" />
               </Link>
               <Link>
-                <img src="images/view.svg" alt="view" />
+                <img src={view} alt="view" />
               </Link>
               <Link>
-                <img src="images/add-cart.svg" alt="addcart" />
+                <img src={addcart} alt="addcart" />
               </Link>
             </div>
           </div>
@@ -247,17 +263,17 @@ const ProductCard = (props) => {
         <Link to='product/:id' className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
-              <img src="images/wish.svg" alt="wishlist"></img>
+              <img src={wish} alt="wishlist"></img>
             </Link>
           </div>
           <div className="product-image">
             <img
-              src="images/vivo.webp"
+              src={vivo}
               className="img-fluid"
               alt="productImage"
             />
             <img
-              src="images/vivo-f.webp"
+              src={vivof}
               className="img-fluid"
               alt="productImage"
             />
@@ -285,13 +301,13 @@ const ProductCard = (props) => {
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
               <Link>
-                <img src="images/prodcompare.svg" alt="conpare" />
+                <img src={prodcompare} alt="conpare" />
               </Link>
               <Link>
-                <img src="images/view.svg" alt="view" />
+                <img src={view} alt="view" />
               </Link>
               <Link>
-                <img src="images/add-cart.svg" alt="addcart" />
+                <img src={addcart} alt="addcart" />
               </Link>
             </div>
           </div>
@@ -305,17 +321,17 @@ const ProductCard = (props) => {
         <Link to='product/:id' className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
-              <img src="images/wish.svg" alt="wishlist"></img>
+              <img src={wish} alt="wishlist"></img>
             </Link>
           </div>
           <div className="product-image">
             <img
-              src="images/realme.webp"
+              src={real}
               className="img-fluid"
               alt="productImage"
             />
             <img
-              src="images/realme-f.webp"
+              src={realf}
               className="img-fluid"
               alt="productImage"
             />
@@ -344,182 +360,19 @@ const ProductCard = (props) => {
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
               <Link>
-                <img src="images/prodcompare.svg" alt="conpare" />
+                <img src={prodcompare} alt="conpare" />
               </Link>
               <Link>
-                <img src="images/view.svg" alt="view" />
+                <img src={view} alt="view" />
               </Link>
               <Link>
-                <img src="images/add-cart.svg" alt="addcart" />
+                <img src={addcart} alt="addcart" />
               </Link>
             </div>
           </div>
         </Link>
       </div>
-      <div
-        className={` ${
-          location.pathname == "/product" ? `gr-${grid}` : "col-3"
-        } `}
-      >
-        <Link to='product/:id' className="product-card position-relative">
-          <div className="wishlist-icon position-absolute">
-            <Link>
-              <img src="images/wish.svg" alt="wishlist"></img>
-            </Link>
-          </div>
-          <div className="product-image">
-            <img
-              src="images/asus.jpg"
-              className="img-fluid"
-              alt="productImage"
-            />
-            <img
-              src="images/asus-f.jpg"
-              className="img-fluid"
-              alt="productImage"
-            />
-          </div>
-          <div className="product-details">
-            <h6 className="brand">Asus</h6>
-            <h5 className="product-title">
-              ASUS ROG Phone 7 Ultimate 16GB 512GB
-            </h5>
-            <ReactStars
-              count={5}
-              size={24}
-              value={4}
-              edit={false}
-              activeColor="#ffd700"
-            />
-            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
-              Asus ROG phone 7 Ultimate 16GB 512GB owns Snapdragon 8 Gen 2 chip
-              with super power from Qualcomm. The screen is made from an amoled
-              screen with a huge size of 6.78 inches for Full HD Plus image
-              quality. Super quality camera with resolution up to 50MP comes
-              with an unrivaled 6000mAh battery and 65W HyperCharge charging
-              mode.{" "}
-            </p>
-            <p className="price">$1099.00</p>
-          </div>
-          <div className="action-bar position-absolute">
-            <div className="d-flex flex-column gap-15">
-              <Link>
-                <img src="images/prodcompare.svg" alt="conpare" />
-              </Link>
-              <Link>
-                <img src="images/view.svg" alt="view" />
-              </Link>
-              <Link>
-                <img src="images/add-cart.svg" alt="addcart" />
-              </Link>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div
-        className={` ${
-          location.pathname == "/product" ? `gr-${grid}` : "col-3"
-        } `}
-      >
-        <Link to='product/:id' className="product-card position-relative">
-          <div className="wishlist-icon position-absolute">
-            <Link>
-              <img src="images/wish.svg" alt="wishlist"></img>
-            </Link>
-          </div>
-          <div className="product-image">
-            <img
-              src="images/ip15-black.jpg"
-              className="img-fluid"
-              alt="productImage"
-            />
-            <img
-              src="images/ip15-pink.jpg"
-              className="img-fluid"
-              alt="productImage"
-            />
-          </div>
-          <div className="product-details">
-            <h6 className="brand">Havels</h6>
-            <h5 className="product-title">
-              Kids headphone bulk 10 pack multi colored for students
-            </h5>
-            <ReactStars
-              count={5}
-              size={24}
-              value={4}
-              edit={false}
-              activeColor="#ffd700"
-            />
-            <p className="price">$100.00</p>
-          </div>
-          <div className="action-bar position-absolute">
-            <div className="d-flex flex-column gap-15">
-              <Link>
-                <img src="images/prodcompare.svg" alt="conpare" />
-              </Link>
-              <Link>
-                <img src="images/view.svg" alt="view" />
-              </Link>
-              <Link>
-                <img src="images/add-cart.svg" alt="addcart" />
-              </Link>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div
-        className={` ${
-          location.pathname == "/product" ? `gr-${grid}` : "col-3"
-        } `}
-      >
-        <Link to='product/:id' className="product-card position-relative">
-          <div className="wishlist-icon position-absolute">
-            <Link>
-              <img src="images/wish.svg" alt="wishlist"></img>
-            </Link>
-          </div>
-          <div className="product-image">
-            <img
-              src="images/ip15-black.jpg"
-              className="img-fluid"
-              alt="productImage"
-            />
-            <img
-              src="images/ip15-pink.jpg"
-              className="img-fluid"
-              alt="productImage"
-            />
-          </div>
-          <div className="product-details">
-            <h6 className="brand">Havels</h6>
-            <h5 className="product-title">
-              Kids headphone bulk 10 pack multi colored for students
-            </h5>
-            <ReactStars
-              count={5}
-              size={24}
-              value={4}
-              edit={false}
-              activeColor="#ffd700"
-            />
-            <p className="price">$100.00</p>
-          </div>
-          <div className="action-bar position-absolute">
-            <div className="d-flex flex-column gap-15">
-              <Link>
-                <img src="images/prodcompare.svg" alt="conpare" />
-              </Link>
-              <Link>
-                <img src="images/view.svg" alt="view" />
-              </Link>
-              <Link>
-                <img src="images/add-cart.svg" alt="addcart" />
-              </Link>
-            </div>
-          </div>
-        </Link>
-      </div>
+      
     </>
   );
 };
