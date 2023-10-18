@@ -101,7 +101,7 @@ const Checkout = () => {
                         <IoIosArrowBack className="me-2" />
                         Return To Cart
                       </Link>
-                      <Link to="/cart" className="button">
+                      <Link to="/product" className="button">
                         Continue To Shipping
                       </Link>
                     </div>
