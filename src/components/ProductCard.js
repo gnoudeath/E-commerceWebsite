@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from "react-router-dom";
 import prodcompare from "../images/prodcompare.svg"
@@ -18,17 +18,41 @@ import vivo from "../images/vivo.webp";
 import vivof from "../images/vivo-f.webp";
 import real from "../images/realme.webp";
 import realf from "../images/realme-f.webp";
+import axios from "axios";
 const ProductCard = (props) => {
   const { grid } = props;
   let location = useLocation();
+
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    // Gọi API từ máy chủ chạy trên cổng 5000
+    axios
+      .get("http://localhost:5000/api/products")
+      .then((response) => {
+        setProducts(response.data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Lỗi khi gọi API: ", error);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return <p>Đang tải dữ liệu...</p>;
+  }
+
   return (
     <>
+    {products.map((product) => (
       <div
         className={` ${
           location.pathname === "/product" ? `gr-${grid}` : "col-3"
-        } `}
+        } `} 
       >
-        <Link to=':id' className="product-card position-relative">
+        <Link to={`/product/${product._id}`} className="product-card position-relative">
+
           <div className="wishlist-icon position-absolute">
             <button className="border-0 bg-transparent">
               <img src={wish} alt="wishlist"></img>
@@ -36,34 +60,30 @@ const ProductCard = (props) => {
           </div>
           <div className="product-image">
             <img
-              src={ip15pink}
+              src={product.image}
               className="img-fluid"
               alt="productImage"
             />
             <img
-              src={ip15pinkf}
+              src={product.image}
               className="img-fluid"
               alt="productImage"
             />
           </div>
           <div className="product-details">
-            <h6 className="brand">Apple</h6>
-            <h5 className="product-title">iPhone 15 128GB | Chính hãng VN/A</h5>
+            <h6 className="brand">{product.brand}</h6>
+            <h5 className="product-title">{product.productTitle}</h5>
             <ReactStars
               count={5}
               size={24}
-              value={4}
+              value={product.rating}
               edit={false}
               activeColor="#ffd700"
             />
             <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
-              iPhone 15 128GB is equipped with a 6.1-inch Dynamic Island screen
-              with Super Retina XDR display technology for a superior visual
-              experience. The phone has an anti-fouling glass bottom surface and
-              5 color versions to choose from: Pink, Yellow, Green, Blue and
-              black.
+            {product.description}
             </p>
-            <p className="price">$899.00</p>
+            <p className="price">${product.price}</p>
           </div>
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15 ">
@@ -80,7 +100,8 @@ const ProductCard = (props) => {
           </div>
         </Link>
       </div>
-      <div
+      ))}
+      {/* <div
         className={` ${
           location.pathname === "/product" ? `gr-${grid}` : "col-3"
         } `}
@@ -371,7 +392,7 @@ const ProductCard = (props) => {
             </div>
           </div>
         </Link>
-      </div>
+      </div> */}
       
     </>
   );
