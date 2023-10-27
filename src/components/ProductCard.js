@@ -66,7 +66,7 @@ const ProductCard = (props) => {
             <p className="price">$899.00</p>
           </div>
           <div className="action-bar position-absolute">
-            <div className="d-flex flex-column gap-15">
+            <div className="d-flex flex-column gap-15 ">
               <button className="border-0 bg-transparent">
                 <img src={prodcompare} alt="conpare" />
               </button>
